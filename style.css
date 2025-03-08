@@ -1,0 +1,66 @@
+*,
+::after,
+::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: system-ui, sans-serif;
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+  color-scheme: dark light;
+}
+
+body {
+  min-height: 100vh;
+  display: grid;
+  place-content: center;
+  gap: 10em;
+}
+
+nav {
+  position: fixed;
+  right: 0;
+}
+
+nav>button {
+  margin: 1em 1em 0 0;
+  
+}
+
+.about_me {
+  padding: 2em;
+  border: 1px solid;
+  border-radius: 1em;
+  margin: 0 auto;
+  width: 80%;
+  display: flex;
+}
+
+.about {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+
+.me {
+  width: 30%;
+}
+
+.contacto {
+  display: flex;
+  justify-content: space-around;
+}
+
+.social {
+  display: flex;
+  gap: 2em;
+}
+
+.proyectos {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}

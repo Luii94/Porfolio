@@ -1,11 +1,78 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://kit.fontawesome.com/58ddc0b708.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="style.css" />
     <title>Portafolio</title>
-</head>
-<body>
-    <h1>Proyectos</h1>
-</body>
+  </head>
+  <body>
+    <!-- Boton modo noche -->
+    <nav>
+      <button>
+        <i class="fa-solid fa-circle-half-stroke"></i>
+      </button>
+    </nav>
+    <!-- Una seccion acerca de mi -->
+    <section class="about_me">
+      <div class="me">
+        <img src="#" alt="Luis Javier Canan Corral" />
+      </div>
+
+      <div class="about">
+        <h2>Hola mundo</h2>
+
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus
+          odit, laboriosam, exercitationem est commodi dicta tempora rem quo,
+          hic magnam accusantium saepe molestias quasi. Officiis, quia delectus!
+          Quia, totam veniam.
+        </p>
+
+        <div class="contacto">
+          <div class="social">
+            <a href="#">
+              <i class="fa-brands fa-github"></i>
+            </a>
+
+            <a href="#">
+              <i class="fa-brands fa-linkedin"></i>
+            </a>
+          </div>
+
+          <div class="correo">
+            <span id="email">ljcanan.1994@gmail.com</span>
+            <button id="copiarEmail" onclick="copiarEmail()">
+              <i class="fa-solid fa-clipboard"></i>
+            </button>
+          </div>
+
+          <div class="cv">
+            <a href="#">Curriculum</a>
+
+            <button>
+              <i class="fa-solid fa-download"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Seccion sobre mis proyectos -->
+    <section class="proyectos">
+      <h1>Proyectos</h1>
+
+      <div>
+        <div>Calculadora</div>
+
+        <div>Clima</div>
+      </div>
+    </section>
+    <!-- Pie de pagina -->
+    <footer></footer>
+    <script src="script.js"></script>
+  </body>
 </html>
