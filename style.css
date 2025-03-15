@@ -27,7 +27,6 @@ nav {
   position: fixed;
   top: 0;
   right: 0;
-
 }
 
 nav > button {
@@ -35,7 +34,6 @@ nav > button {
 }
 
 footer {
-
 }
 
 a {
@@ -56,6 +54,7 @@ button {
   border: none;
   background: none;
   font-size: 2em;
+  cursor: pointer;
 }
 
 /* About Me */
@@ -90,15 +89,33 @@ button {
 
 .social {
   display: flex;
-  gap: 2em;
+  gap: 1.2em;
 }
 
 .link {
   border: 1px solid;
+  border-radius: 50%;
 }
 
-.link>i {
-  
+.link > i {
+  margin: .5em;
+}
+
+.correo {
+  padding: .8em 2em ;
+  border: 1px solid;
+  border-radius: 2em;
+  text-align: center;
+}
+
+.correo>span {
+  margin-right: .8em;
+}
+
+.cv {
+  padding: 1em 2em;
+  border: 1px solid;
+  border-radius: 1em;
 }
 
 /* Seccion de proyectos */
@@ -110,7 +127,7 @@ button {
   gap: 3em;
 }
 
-.proyectos>div {
+.proyectos > div {
   border: 1px solid;
   border-radius: 1em;
   min-width: 20em;
