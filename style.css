@@ -34,6 +34,9 @@ nav > button {
 }
 
 footer {
+  /* width: 100%; */
+  height: 5em;
+  border-top: 1px solid;
 }
 
 a {
@@ -43,7 +46,7 @@ a {
 }
 
 p {
-  font-size: 1.6em;
+  font-size: 1.8em;
 }
 
 span {
@@ -57,29 +60,38 @@ button {
   cursor: pointer;
 }
 
-/* About Me */
+/* Accerca de mi */
 .about_me {
   margin: 0 auto;
+  max-width: 120em;
   padding: 2.5em;
   border: 1px solid;
-  border-radius: 1em;
-  width: 80%;
+  border-radius: 1.6em;
   display: flex;
+  align-items: center;
   gap: 5em;
 }
 
+.me {
+  min-width: 25%;
+  display: grid;
+  place-content: center;
+}
+
+.me>img {
+  width: 25em;
+  height: 25em;
+  border: 1px solid;
+  border-radius: 50%;
+  /* object-fit: cover; */
+}
+
 .about {
+  width: 75%;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  gap: 1em;
-}
-
-.me {
-  min-width: 20em;
-  min-height: 20em;
-  border: 1px solid;
-  border-radius: 50%;
+  gap: 5em;
 }
 
 .contacto {
@@ -89,39 +101,41 @@ button {
 
 .social {
   display: flex;
-  gap: 1.2em;
+  gap: 2em;
 }
 
-.link {
+.social_link {
+  width: 2.2em;
+  height: 2.2em;
   border: 1px solid;
   border-radius: 50%;
-}
-
-.link > i {
-  margin: .5em;
+  display: grid;
+  place-content: center;
 }
 
 .correo {
-  padding: .8em 2em ;
-  border: 1px solid;
-  border-radius: 2em;
-  text-align: center;
-}
 
-.correo>span {
-  margin-right: .8em;
+  padding: .5em 2em ;
+  border: 1px solid;
+  border-radius: 2.5em;
+  display: flex;
+  align-items: center;
+  gap: 2em;
 }
 
 .cv {
   padding: 1em 2em;
   border: 1px solid;
-  border-radius: 1em;
+  border-radius: 1.2em;
+  display: flex;
+  align-items: center;
+  gap: 2em;
 }
 
 /* Seccion de proyectos */
 .proyectos {
   margin: 0 auto;
-  display: grid;
+  /* display: grid; */
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: repeat(3, 1fr);
   gap: 3em;
